@@ -1,4 +1,12 @@
 ---
+import Footer from '../components/Footer.astro';
+import Galeria from '../components/Galeria.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Laboratorio1 from '../components/Laboratorio1.astro';
+import Laboratorio2 from '../components/Laboratorio2.astro';
+import LaboratorioGeneral from '../components/LaboratorioGeneral.astro';
+import Recursos from '../components/Recursos.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -7,5 +15,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Header/>
+	<Hero/>
+	<Laboratorio1/>
+	<Laboratorio2/>
+	<LaboratorioGeneral/>
+	<Galeria/>
+	<Recursos/>
+	<Footer/>
 </Layout>
