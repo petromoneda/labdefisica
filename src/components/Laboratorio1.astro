@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import labfis11 from '../images/lab-fis-11.jpg';
+---
+<div class="contenedor">
+    <div class="izquierda">
+        <h2>Laboratorio de física 11</h2>
+        <p>
+            Está diseñado para que los estudiantes desarrollen habilidades fundamentales en experimentación científica, aplicando los principios teóricos de la física a través de una serie de prácticas cuidadosamente estructuradas donde aprenderán a manejar instrumentos de medición, analizar datos, evaluar errores y elaborar informes técnicos, consolidando así su comprensión de fenómenos físicos.
+        </p>
+    </div>
+    <div class="derecha">
+        <image id="labfis11" class="labfisica11" src={labfis11.src} alt="Logo Ciencias ULA" fetchpriority="high"></image>
+    </div>
+</div>
+
+
+<style>
+    .contenedor {
+		display: flex;
+        
+  		background: #000;
+        width: 99%;
+	}
+
+	.izquierda {
+        width: 49%;
+  		text-align: justify;
+        font-size: 150%;
+  		padding: 10px;
+	}
+
+	.derecha {
+        width: 49%;
+  		padding: 10px;
+	}
+    .labfisica11{
+       /* height: 40%;*/
+       width: 97%;
+       margin-top: 5%;
+    }
+</style>
