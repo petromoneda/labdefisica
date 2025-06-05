@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import labfis11 from '../images/lab-fis-11.jpg';
+---
+<div class="contenedor">
+    <div class="izquierda">
+        <image id="labfis11" class="labfisica11" src={labfis11.src} alt="Logo Ciencias ULA" fetchpriority="high"></image>
+    </div>
+    <div class="derecha">
+        <h2>Laboratorio de Física 21</h2>
+        <p>
+            El Laboratorio 2 de Física introduce a los estudiantes en los principios fundamentales de la electricidad y el magnetismo mediante experimentos prácticos que desarrollan habilidades en mediciones eléctricas, análisis de circuitos y manejo de instrumentación especializada. A través de prácticas como el uso de multímetros, osciloscopios, el estudio de circuitos RLC y fenómenos electromagnéticos, los participantes aprenden a verificar leyes físicas y presentar resultados con rigor científico.
+        </p>
+    </div>
+    
+</div>
+
+
+<style>
+    .contenedor {
+		display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+        margin-top: 30px;
+        gap: 1%;
+	}
+
+	    .derecha {
+        width: 49%;
+  		text-align: left;
+        font-size: 150%;
+  		padding: 10px;
+        flex-basis: 48%;
+        }
+
+	    .izquierda{
+        width: 49%;
+  		padding: 10px;
+        flex-basis: 48%;
+        }
+    .labfisica11{
+      
+       width: 600px;
+       margin-top: 45px;
+       
+    }
+</style>

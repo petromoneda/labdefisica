@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import labfis11 from '../images/lab-fis-11.jpg';
+---
+<div class="contenedor">
+    <div class="izquierda">
+        <h2>Laboratorio de Física General</h2>
+        <p>
+            Este curso integra los fundamentos experimentales de mecánica y electricidad, ofreciendo una formación práctica esencial en ingeniería. Los estudiantes desarrollarán habilidades en medición precisa, análisis de datos y manejo de instrumentos como vernier, tornillos micrométricos, multímetros y osciloscopios, mientras verifican leyes físicas asi como el estudio del comportamiento de circuitos básicos.
+        </p>
+    </div>
+    <div class="derecha">
+        <image id="labfis11" class="labfisica11" src={labfis11.src} alt="Logo Ciencias ULA" fetchpriority="high"></image>
+    </div>
+</div>
+
+
+<style>
+    .contenedor {
+		display: flex;
+        flex-wrap: wrap;
+  		width: 99%;
+        gap: 1%;
+	}
+
+	.izquierda {
+        width: 49%;
+  		text-align: left;
+        font-size: 150%;
+  		padding: 10px;
+        flex-basis: 48%;
+        }
+
+	.derecha {
+        width: 49%;
+  		padding: 10px;
+        flex-basis: 48%;
+        }
+    .labfisica11{
+      
+       width: 600px;
+       margin-top: 45px;
+       
+    }
+</style>
